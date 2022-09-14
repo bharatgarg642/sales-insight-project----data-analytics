@@ -45,5 +45,5 @@ select (transactions.sales_amount) from transactions inner join date on transact
 --show total revenue in year 2020, january month,
 select sum(transactions.sales_amount) from transactions inner join date on transactions.order_date=date.date where date.year=2020 and and date.month_name="january" and (transactions.currency="inr\r" or transactions.currency="usd\r");
 
-show total revenue in year 2020 in chennai
+---show total revenue in year 2020 in chennai
 select sum(transactions.sales_amount) from transactions inner join date on transactions.order_date=date.date where date.year=2020 and transactions.market_code="mark001";
